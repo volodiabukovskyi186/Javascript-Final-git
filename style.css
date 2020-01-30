@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbarMenu{
+
+  
+   background: rgb(37, 37, 37);
+   height: 8vh;
+
+}
+.margin{
+    padding-top: 10px;
+}
+#login{
+    border: solid silver 1px;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+#password{
+    margin-top: 5px;
+    border: solid silver 1px;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+.close{
+    position: absolute;
+    z-index: 10;
+    top: 5px;
+    right: 10px;
+}
+.sing_in{
+  
+    width: 90%;
+}
+.sing_in_body{
+    margin-left: 10px;
+}
+.sing_in_header{
+    
+    margin: 0 auto;
+}
+.modal-body_color{
+    height: 230px;
+}
+#text_colors{
+display: flex;
+flex-wrap: wrap;
+margin-left: 15px;
+}
+#text_colors div{
+    margin-left: 2px;
+}
+#mainContent{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.closeB{
+   position: absolute;
+   z-index: 10;
+   top: 5px;
+   right: 10px;
+}
+#back_colors{
+    display: flex;
+flex-wrap: wrap;
+margin-left: 2px;
+}
+#btnRadius{
+    border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+}
+#back_image{
+    width: 100%;
+    height: 300px;
+}
+#back_image{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#download{
+    width: 100%;
+    height: 50px;
+}
+
+#scriptBar{
+    margin: 0 auto;
+}
+#codeContainer{
+    margin-right: 20px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 15px;
+
+}
+textarea{
+display: none;
+ 
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+.tr_left p{
+    margin-bottom: 0;
+}
+
+.tr_right p{
+    margin-bottom: 0;
+}
+
+
+.table_inp{
+    border: silver 1px solid;
+    border-radius: 5px;
+    height: 40px;
+}
+.border_Col_Type{
+display: flex;
+justify-content: space-between
+}
+#type_border{
+    width: 150px;
+    height: 30px;
+}
+#color_border{
+    width: 150px;
+    height: 30px;
+}
+.btn_modal_TB{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#resetTB{
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    background: red
+}
+#creteTB{
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+   background: green
+}
+#resetOl{
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    background: red
+}
+#creteOl{
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+   background: green
+}
+.olModal{
+    height: 200px;
+}
+
+#typeMaskOl{
+    
+    height: 40px;
+}
+#countOl{
+border-radius: 5px;
+height: 40px;
+border: solid silver 1px;
+}
+#resetUl{
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    background: red
+}
+#creteUl{
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+   background: green
+}
+#typeUl{
+    height: 40px;
+}
+#countUl{
+    border: solid silver 1px;
+    height: 40px;
+    border-radius: 5px;
+}

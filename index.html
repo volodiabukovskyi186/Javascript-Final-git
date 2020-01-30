@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d0d494eb53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form name='f1'>
+        <!-- nav bar menu start=> -->
+        <div class="container-fluid navbarMenu">
+            <div class="container col-lg-6 col_main  d-flex justify-content-between  margin ">
+                <div class="btn-toolbar " role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" id="icode" class="btn bg-light "><i class="fas fa-code"></i></button>
+                    </div>
+                    <!-- buttons for making text bold,italic and underline -->
+                    <div class="btn-group mr-2" role="group" id="secondMenu" aria-label="Second group">
+                        <button type="button" id="bold" class="btn bg-light"><i class="fas fa-bold"></i></button>
+                        <button type="button" id="italic" class="btn bg-light"><i class="fas fa-italic"></i></button>
+                        <button type="button" id="undeline" class="btn bg-light"><i
+                                class="fas fa-underline"></i></button>
+                        <button type="button" id="linethrow" class="btn bg-light"><i
+                                class="fas fa-remove-format"></i></button>
+                    </div>
+                    <!-- button for alig text -->
+                    <div class="btn-group" role="group" id="thirdMenu" aria-label="Third group">
+
+                        <button type="button" id="left" value="left" class="btn bg-light"><i
+                                class="fas fa-align-left"></i></button>
+                        <button type="button" id="center" value="center" class="btn bg-light"><i
+                                class="fas fa-align-center"></i></button>
+                        <button type="button" id="right" value="right" class="btn bg-light"><i
+                                class="fas fa-align-right"></i></button>
+                    </div>
+                </div>
+                <!-- drop dwon menu for text style  -->
+                <div class="btn-group " role="group" id="fourMenu">
+                    <div class="btn-group" role="group">
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn  bg-light dropdown-toggle "
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-font"></i>
+                            </button>
+                            <div class=" dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a value class="dropdown-item  Arial" style="font-family: Arial, Helvetica, sans-serif"
+                                    href="#">Arial</a>
+                                <a class="dropdown-item Georgia"
+                                    style="font-family:Georgia, 'Times New Roman', Times, serif" href="#">Georgia</a>
+                                <a class="dropdown-item Impact"
+                                    style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif "
+                                    href="#">Impact</a>
+                                <a class="dropdown-item Tahoma"
+                                    style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+                                    href="#">Tahoma</a>
+                                <a class="dropdown-item Time" style="font-family:'Times New Roman', Times, serif"
+                                    href="#">Time New Roman</a>
+                                <a class="dropdown-item Verdana" style="font-family:Verdana, Geneva, Tahoma, sans-serif"
+                                    href="#"> Verdana</a>
+                            </div>
+                        </div>
+                        <!-- drop  down menu, main button  Size of text -->
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn  bg-light dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-text-height"></i>
+                            </button>
+                            <!-- drop down menu Size of text -->
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a class="dropdown-item  12px" style="font-size: 12px" href="#">12px</a>
+                                <a class="dropdown-item 14px" style="font-size: 14px" href="#">14px</a>
+                                <a class="dropdown-item 16px" style="font-size: 16px" href="#">16px</a>
+                                <a class="dropdown-item 18px" style="font-size: 18px" href="#">18px</a>
+                                <a class="dropdown-item 20px" style="font-size: 20px" href="#">20px</a>
+                                <a class="dropdown-item 22px" style="font-size: 22px" href="#">22px</a>
+                                <a class="dropdown-item 25px" style="font-size: 25px" href="#">25px</a>
+                                <a class="dropdown-item 30px" style="font-size: 30px" href="#">30px</a>
+                            </div>
+                        </div>
+                        <!-- Button color of text modal -->
+                        <button type="button" class="btn bg-light "  data-toggle="modal"
+                            data-target="#exampleModalLongColor">
+                            <i class="fas fa-palette"></i>
+                        </button>
+                        <!-- Button color,image,fiel, of background modal -->
+                        <button type="button" id="btnRadius"  class="btn    bg-light" data-toggle="modal" data-target="#staticBackdrop">
+                            <i class="fas fa-image"></i>
+                        </button>
+                        <!-- Modal  color,image,fiel, of background -->
+                        <div class="modal fade   " id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header d-flex align-items-start flex-column bd-highlight mb-3">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Choose background color or
+                                            image </h5><button type="button" class="close closeB" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <div class="btn-group backgroundB" role="group" aria-label="Basic example">
+                                            <button type="button" id="backgroundCol"
+                                                class="btn bg-light">Colors</button>
+                                            <button type="button" id="image" class="btn bg-light">Image</button>
+                                            <button type="button" id="file" class="btn bg-light">Files</button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div id="back_colors">
+                                        </div>
+                                        <div id="back_image" style="display: none">
+                                        </div>
+                                        <div id="download" style="display: none">
+                                            <div class="form-group">
+
+                                                <input id="inpFile" type="file" name="file">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- button for singing  -->
+                <button type="button" class="btn bg-light " id="fiveMenu" class="colorText" data-toggle="modal"
+                    data-target="#exampleModalLong">
+                    <i class="fas fa-lock"></i></button>
+                </button>
+                <!-- modal menu for singing -->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header sing_in_header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Sing in</h5>
+                            </div>
+                            <div class="modal-body sing_in_body ">
+                                <input type="text" name="login" id="login">
+                                <input type="text" name="password" id="password">
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center q ">
+                                <button id="sing_in" type="button" class="btn btn-secondary sing_in"
+                                    data-dismiss="modal">Sing in
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal menu for choose color of text -->
+                <div class="modal fade" id="exampleModalLongColor" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            <div class="modal-header sing_in_header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Chose text color</h5>
+                                
+                            </div>
+                            <div class="modal-body_color  " id="text_colors">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- munu in second navabar -->
+                <div class="btn-toolbar  col-lg-6" id="scriptBar" style="display: none" role="toolbar"
+                    aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" id="mainPage" class="btn bg-light"><i class="fas fa-file-word"></i>
+                        </button>
+                        <button type="button" class="btn bg-light" data-toggle="modal"
+                            data-target=".bd-example-modal-lg"><i class="fas fa-table"></i></button>
+                        <button type="button" class="btn bg-light" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fas fa-list-ol"></i>
+                        </button>
+                        <button type="button" class="btn bg-light" data-toggle="modal" data-target="#exampleModalUL">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- modal menu for create table -->
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="container-fluid">
+                                <div class="modal-header sing_in_header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Create table</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 tr_left">
+                                        <p>Count tr</p>
+                                        <input type="text" name="countTR" class="col-lg-12 table_inp" id="countTR">
+                                        <p>Width td</p>
+                                        <input type="text" name="widthTD" class="col-lg-12 table_inp" id="widthTD">
+                                        <p>Width of border</p>
+                                        <input type="text" name="borderWidth" class="col-lg-12 table_inp"
+                                            id="borderWidth">
+                                    </div>
+                                    <div class="col-lg-6 tr_right">
+                                        <p>Count td</p>
+                                        <input type="text" name="countTD" class="col-lg-12 table_inp" id="countTD">
+                                        <p>Height td</p>
+                                        <input type="text" name="heightTR" class="col-lg-12 table_inp" id="heightTR">
+                                        <div class="border_Col_Type">
+                                            <div class="">
+                                                <p>Type of border</p> <select name="type_border" class=""
+                                                    id="type_border">
+                                                    <option value="solid">solid</option>
+                                                    <option value="dotted">dotted</option>
+                                                    <option value="dashed">dashed</option>
+                                                    <option value="inset">inset</option>
+
+                                                </select>
+                                            </div>
+                                            <div class=" ">
+                                                <p>Color of border</p>
+                                                <select name="color_border" class="\" id="color_border">
+                                                    <option value="red">red</option>
+                                                    <option value="black">black</option>
+                                                    <option value="yellow">yellow</option>
+                                                    <option value="violet">violet</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 btn_modal_TB   d-flex justify-content-between  ">
+
+                                        <div class="reset_table col-lg-6">
+                                            <input type="button" class="col-lg-12" name="resetTB" id="resetTB"
+                                                value="Reset">
+
+                                        </div>
+                                        <div class="create_table col-lg-6">
+                                            <input type="button" class="col-lg-12  " name="creteTB" id="creteTB"
+                                                value="Create table">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal menu for create list OL -->
+                <div class="modal fade  " id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create OL</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body olModal">
+                                <div class="row">
+                                    <div class="col-lg-12 ">
+                                        <p>Count li item</p>
+                                        <input type="text" name="countOl" class="col-lg-12 ol_inp" id="countOl">
+                                        <p>Type mark of list</p>
+                                        <select name="typeMaskOl" class="typeMaskOl col-lg-12" id="typeMaskOl">
+                                            <option value="decimal">1</option>
+                                            <option value="upper-roman">|</option>
+                                            <option value="lower-roman">i</option>
+                                            <option value="upper-latin">A</option>
+                                            <option value="lower-latin">a</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="col-lg-12 btn_modal_ol   d-flex justify-content-between  ">
+                                    <div class="reset_ol col-lg-6">
+                                        <input type="button" class="col-lg-12" name="resetOl" id="resetOl"
+                                            value="Reset">
+                                    </div>
+                                    <div class="create_ol col-lg-6">
+                                        <input type="button" class="col-lg-12  " name="creteOl" id="creteOl"
+                                            value="Createv ol">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal menu for create list LI -->
+                <div class="modal fade  " id="exampleModalUL" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create UL</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body ULModal">
+                                <div class="row">
+                                    <div class="col-lg-12 ">
+                                        <p>Count UL item</p>
+                                        <input type="text" name="countUl" class="col-lg-12 ul_inp" id="countUl">
+                                        <p>Type mark of list</p>
+                                        <select name="typeMaskOl" class="typeUl col-lg-12" id="typeUl">
+                                            <option value="circle">circle</option>
+                                            <option value="disc">disc</option>
+                                            <option value="squad">squad</option>
+
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="col-lg-12 btn_modal_ol   d-flex justify-content-between  ">
+
+                                    <div class="reset_ol col-lg-6">
+                                        <input type="button" class="col-lg-12" name="resetUl" id="resetUl"
+                                            value="Reset">
+
+                                    </div>
+                                    <div class="create_ol col-lg-6">
+                                        <input type="button" class="col-lg-12  " name="creteUl" id="creteUl"
+                                            value="Createv Ul">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main container  -->
+            <div id="mainContent">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellendus.</p>
+            </div>
+            <!-- container which we can change on page -->
+            <div id="codeContainer" >
+                <textarea name="area" id="area" class="textArea"></textarea>
+            </div>
+
+        </div>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
